@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:image" content="http://www.lewagon.org/assets/logo-f800df98aa2605c552400667353f47d2.png" />
+
+  <title>Stylus</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="stylesheets/style.css">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+  <!-- Banner -->
+  <div id="banner">
+    <h1>Styl.us</h1>
+    <br>
+    <p>Turn your pen into you best friend</p>
+    <p>Make every line you write count..</p>
+    <br>
+    <a href="#" class="btn btn-primary btn-lg">GET YOUR STYLUS</a>
+  </div>
+  <!-- Features -->
+
+
+  <div class="bg-blue text-padded">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <img src="images/paper.svg" alt="paper">
+            <h2>Natural writing</h2>
+            <p>Don't change your habits, write with a <strong>pen on paper notebooks</strong></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <img src="images/data.svg" alt="data">
+            <h2>Sync. copy</h2>
+            <p>Stylus instantaneously copy your text on your computer, <strong>in real-time</strong></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <img src="images/analytics.svg" alt="analytics">
+            <h2>Analytics</h2>
+            <p>Get feedbacks on the way you write,<strong>your favorite words, your frequent mistakes</strong> </p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card">
+            <img src="images/computer.svg" alt="computer">
+            <h2>Storing your texts</h2>
+            <p>Everything line writen with your stylus is stored in the cloud, so that <strong>it's never lost</strong>it's never lost</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+  <!-- Form -->
+
+  <div class="card text-center text-padded">
+    <h2>Get news from stylus</h2>
+    <p>Leave us your mail and get stylus news</p>
+    <form action="">
+      <input type='email' placeholder='alan@turing.org'>
+      <input type='submit' value='Apply' class='btn btn-primary'>
+
+    </form>
+  </div>
+  <!-- Map -->
+  <div id="map" style="width: 100%; height: 400px;"></div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script type="text/javascript">
+var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+
+var myOptions = {
+  zoom: 16,
+  center: myLatlng,
+  scrollwheel: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP,
+  styles: [] // TODO: replace [] by array from https://snazzymaps.com/
+};
+
+var map = new google.maps.Map(document.getElementById('map'), myOptions);
+var marker = new google.maps.Marker({
+  position: myLatlng,
+  map: map,
+  title: "You are here!"
+});
+</script>
+
+  <!-- Footer -->
+
+  <div id='footer' class='text-padded'>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-6 ">
+          <ul class="list-inline">
+            <li><i class="fa fa-twitter"></i> <br></li>
+            <li><i class="fa fa-github"></i> <br></li>
+            <li><i class="fa fa-facebook"></i> <br></li>
+            <li><i class="fa fa-linkedin"></i> <br></li>
+          </ul>
+        </div>
+        <div class="col-xs-6 text-right ">
+          <p>Stylus is a fictive product by LeWagon</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>
